@@ -1,2 +1,23 @@
-<h1>This is my handle bars Homepage.. </h1>
-<p> {{ stuff }} </p>
+<div class="jumbotron">
+  <h1 class="display-4">{{stock.companyName}}</h1>
+ <strong> Latest Price: </strong> {{ stock.latestPrice }} <br/>
+<strong> Open Price: </strong> {{ stock.open }} <br/>
+<strong> Percentage Change: </strong> {{ stock.changePercent }} <br/>
+<strong> Market Cap: </strong> {{ stock.marketCap }} <br/>
+<strong> TYD Change: </strong> {{ stock.ytdChange }} <br/>
+<strong> 52-Week Low: </strong> {{ stock.week52Low }} <br/>
+<strong> 52-Week High: </strong> {{ stock.week52High }} <br/>
+</div>
+
+
+
+<br/>
+
+
+<!--
+<br/>
+{{#each stock}}
+	{{@key}} | {{this}} <br/>
+
+{{/each}}
+-->
